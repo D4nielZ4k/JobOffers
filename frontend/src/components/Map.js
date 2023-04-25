@@ -5,8 +5,7 @@ import { Loader } from "@googlemaps/js-api-loader";
 const Map = () => {
   useEffect(() => {
     const loader = new Loader({
-      apiKey: "AIzaSyD8KzTN6Izc6cfStaO1B8GIQwjYpLTNH3s",
-
+      apiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
       version: "weekly",
     });
 
