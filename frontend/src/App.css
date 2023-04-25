@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+.Top-bar {
+  margin-left: 0%;
+  width: 100%;
+  height: 5%;
+  background-color: #777;
+}
 .offer-list-left-bar {
   position: absolute;
   margin-left: 0%;

@@ -49,9 +49,6 @@ const AddOffer = () => {
   };
   return (
     <div className="add-offer-container">
-      <h1 className="add-offer-title">
-        Formularz oferty pracy (funkcjonalny komponent)
-      </h1>
       <form className="add-offer-form" onSubmit={handleSubmit}>
         <label></label>
         <br />
@@ -156,7 +153,7 @@ const AddOffer = () => {
           />
         </label>
         <br />
-        <button type="submit">Wyślij</button>
+        <button type="submit">Send</button>
       </form>
     </div>
   );
