@@ -1,0 +1,52 @@
+/* src/AddOffer.css */
+.add-offer-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-offer-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.add-offer-form label {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.add-offer-form input,
+.add-offer-form textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.add-offer-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.add-offer-form button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-offer-form button:hover {
+  background-color: #45a049;
+}

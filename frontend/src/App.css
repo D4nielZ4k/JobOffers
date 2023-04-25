@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+}
+
+.offer-list-left-bar {
+  position: absolute;
+  margin-left: 0%;
+  margin: 50px auto;
+  width: 50%;
+}
+.offer-list {
+  margin: 50px auto;
+  width: 70%;
+}
+
+.offer-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.offer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.offer-header h2 {
+  margin-top: 0;
+}
+
+.offer-header .company {
+  font-size: 14px;
+  color: #777;
+}
+
+.offer-body {
+  display: flex;
+}
+
+.offer-body .description {
+  margin: 0;
+  margin-right: 20px;
+}
+
+.offer-details p {
+  margin: 5px 0;
+}
+
+.offer-details .offer-salary {
+  font-weight: bold;
+}
+
+.offer-details .offer-industry {
+  text-transform: capitalize;
+}
+
+.offer-details .offer-experience {
+  text-transform: capitalize;
+}
+
+.offer-details .offer-jobType {
+  text-transform: capitalize;
+}
+
+.offer-details .offer-formOfEmployment {
+  text-transform: capitalize;
+}
