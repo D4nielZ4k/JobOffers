@@ -22,18 +22,24 @@ public class OfferController {
     private final OfferService offerService;
 
     @PostMapping()
-    public final ResponseEntity<String> addOffer(@RequestBody  final OfferDto body) {
+    public final ResponseEntity<String> addOffer(@RequestBody final OfferDto body) {
 
         return offerService.addOffer(body);
 
     }
 
     @GetMapping
-    public final  ResponseEntity<List<Offer>> getOffers() {
+    public final ResponseEntity<List<Offer>> getOffers() {
         List<Offer> offers = offerService.getOffers();
 
         return ResponseEntity.ok(offers);
 
+    }
+
+    @GetMapping("/{id}")
+    public final ResponseEntity<OfferDto> getOfferById(@PathVariable final Long id) {
+        OfferDto offerDto = offerService.getOfferByID(id);
+        return ResponseEntity.ok(offerDto);
     }
 
 }

@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -33,11 +32,16 @@ public class OfferService {
         return offers;
     }
 
+    public OfferDto getOfferByID(final Long id){
+        OfferDto offerDto = offerDtoBuilder(offerRepo.getById(id));
+        return offerDto;
+    }
 
 
 
     private OfferDto offerDtoBuilder(final Offer body){
         return OfferDto.builder()
+                .id(body.getId())
                 .position(body.getPosition())
                 .industry(body.getIndustry().toString())
                 .experience(body.getExperience().toString())
